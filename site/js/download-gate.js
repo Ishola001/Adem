@@ -25,11 +25,16 @@ document.addEventListener('DOMContentLoaded', function () {
     document.body.style.overflow = '';
   }
 
-  document.querySelectorAll('[data-gated-download]').forEach(function (link) {
-    link.addEventListener('click', function (e) {
-      e.preventDefault();
-      openModal(link);
-    });
+  // Event delegation: guide cards are inserted into the page later, after an
+  // async fetch (see guides.js), so binding clicks directly to elements that
+  // exist at DOMContentLoaded time misses every button rendered after that.
+  // Listening on the document instead means it always works, no matter when
+  // the download link appears in the page.
+  document.addEventListener('click', function (e) {
+    var link = e.target.closest('[data-gated-download]');
+    if (!link) return;
+    e.preventDefault();
+    openModal(link);
   });
 
   closeBtn.addEventListener('click', closeModal);

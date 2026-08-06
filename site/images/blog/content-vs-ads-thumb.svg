@@ -1,0 +1,26 @@
+<svg viewBox="0 0 1200 675" xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#FF5A36"/><stop offset="100%" stop-color="#0F8B8D"/>
+  </linearGradient>
+</defs>
+<rect width="1200" height="675" fill="#FAFAF9"/>
+<line x1="600" y1="120" x2="600" y2="500" stroke="#E7E5DF" stroke-width="2" stroke-dasharray="6 8"/>
+<g transform="translate(280,230)">
+  <circle cx="0" cy="0" r="90" fill="#FFF0EA"/>
+  <path d="M-40 20 L-40 -10 L-10 -30 L40 -50 L40 40 L-10 25 Z" fill="none" stroke="#FF5A36" stroke-width="6" stroke-linejoin="round"/>
+  <circle cx="-40" cy="5" r="8" fill="#FF5A36"/>
+</g>
+<text x="280" y="380" text-anchor="middle" font-family="Arial,sans-serif" font-size="20" font-weight="700" fill="#14171F">Advertising</text>
+<text x="280" y="408" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" fill="#666B78">Rented attention</text>
+
+<g transform="translate(920,230)">
+  <circle cx="0" cy="0" r="90" fill="#E9F6F6"/>
+  <path d="M-40 40 L-40 -30 Q-40 -50 -20 -50 L30 -50 Q45 -50 45 -35 L45 20 Q45 35 30 35 L-10 35 L-30 55 Z" fill="none" stroke="#0F8B8D" stroke-width="6" stroke-linejoin="round"/>
+  <line x1="-22" y1="-25" x2="20" y2="-25" stroke="#0F8B8D" stroke-width="4" stroke-linecap="round"/>
+  <line x1="-22" y1="-5" x2="10" y2="-5" stroke="#0F8B8D" stroke-width="4" stroke-linecap="round"/>
+</g>
+<text x="920" y="380" text-anchor="middle" font-family="Arial,sans-serif" font-size="20" font-weight="700" fill="#14171F">Content</text>
+<text x="920" y="408" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" fill="#666B78">Earned attention</text>
+<text x="600" y="600" text-anchor="middle" font-family="Arial,sans-serif" font-size="20" font-weight="700" fill="#1B3A6B" letter-spacing="1">CONTENT VS ADVERTISING</text>
+</svg>

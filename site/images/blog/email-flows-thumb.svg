@@ -1,0 +1,42 @@
+<svg viewBox="0 0 1200 675" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FF5A36"/><stop offset="100%" stop-color="#0F8B8D"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="#FAFAF9"/>
+  <rect x="0" y="0" width="1200" height="675" fill="none"/>
+  <!-- envelope -->
+  <g transform="translate(430,190)">
+    <rect x="0" y="0" width="340" height="230" rx="16" fill="#FFFFFF" stroke="#E7E5DF" stroke-width="2"/>
+    <path d="M10 20 L170 150 L330 20" fill="none" stroke="url(#g1)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <!-- four nodes with flow lines -->
+  <g font-family="Arial,sans-serif" font-size="18" font-weight="700" fill="#14171F">
+    <g transform="translate(120,80)">
+      <circle cx="0" cy="0" r="34" fill="#FFF0EA" stroke="#FF5A36" stroke-width="2.5"/>
+      <text x="0" y="7" text-anchor="middle" font-size="15" fill="#FF5A36">1</text>
+      <text x="0" y="60" text-anchor="middle" font-size="16">Welcome</text>
+    </g>
+    <g transform="translate(120,250)">
+      <circle cx="0" cy="0" r="34" fill="#E9F6F6" stroke="#0F8B8D" stroke-width="2.5"/>
+      <text x="0" y="7" text-anchor="middle" font-size="15" fill="#0F8B8D">2</text>
+      <text x="0" y="60" text-anchor="middle" font-size="16">Cart</text>
+    </g>
+    <g transform="translate(1030,80)">
+      <circle cx="0" cy="0" r="34" fill="#FFF0EA" stroke="#FF5A36" stroke-width="2.5"/>
+      <text x="0" y="7" text-anchor="middle" font-size="15" fill="#FF5A36">3</text>
+      <text x="0" y="60" text-anchor="middle" font-size="16">Purchase</text>
+    </g>
+    <g transform="translate(1030,250)">
+      <circle cx="0" cy="0" r="34" fill="#E9F6F6" stroke="#0F8B8D" stroke-width="2.5"/>
+      <text x="0" y="7" text-anchor="middle" font-size="15" fill="#0F8B8D">4</text>
+      <text x="0" y="60" text-anchor="middle" font-size="16">Win-back</text>
+    </g>
+  </g>
+  <path d="M155 85 C 260 85 350 150 430 220" fill="none" stroke="#E7E5DF" stroke-width="2" stroke-dasharray="5 6"/>
+  <path d="M155 245 C 260 245 350 220 430 260" fill="none" stroke="#E7E5DF" stroke-width="2" stroke-dasharray="5 6"/>
+  <path d="M1000 85 C 890 85 810 150 770 220" fill="none" stroke="#E7E5DF" stroke-width="2" stroke-dasharray="5 6"/>
+  <path d="M1000 245 C 890 245 810 220 770 260" fill="none" stroke="#E7E5DF" stroke-width="2" stroke-dasharray="5 6"/>
+  <text x="600" y="600" text-anchor="middle" font-family="Arial,sans-serif" font-size="20" font-weight="700" fill="#1B3A6B" letter-spacing="1">EMAIL FLOWS</text>
+</svg>

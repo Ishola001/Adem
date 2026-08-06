@@ -4,31 +4,69 @@
       "slug": "playseated",
       "client": "PlaySeated",
       "role": "Digital Marketing Manager",
-      "tags": ["Shopify", "SEO", "Email", "Paid Ads"],
-      "summary": "Ecommerce brand selling bench soccer tables — full marketing system run end-to-end.",
+      "tags": [
+        "Shopify",
+        "SEO",
+        "Email",
+        "Paid Ads"
+      ],
+      "summary": "Ecommerce brand selling bench soccer tables \u2014 full marketing system run end-to-end.",
       "scope": "SEO, Klaviyo email flows, social content, paid ads strategy, Shopify development, and video/carousel content production, run as one connected system rather than separate efforts.",
       "results": "Gross sales grew from roughly $2,819 in a single month to $53,617 over a trailing 12-month window, with sessions up 230% year over year at the $41,260 milestone.",
       "image": "images/cases/playseated-09-53617.jpg",
       "downloadUrl": "",
       "galleryLabel": "Revenue growth over time (Shopify Analytics)",
       "gallery": [
-        { "src": "images/cases/playseated-01-2819.jpg", "label": "$2,819" },
-        { "src": "images/cases/playseated-02-4608.jpg", "label": "$4,608" },
-        { "src": "images/cases/playseated-03-6590.jpg", "label": "$6,590" },
-        { "src": "images/cases/playseated-04-16298.jpg", "label": "$16,298" },
-        { "src": "images/cases/playseated-05-19217.jpg", "label": "$19,217" },
-        { "src": "images/cases/playseated-06-22377.jpg", "label": "$22,377" },
-        { "src": "images/cases/playseated-07-25026.jpg", "label": "$25,026" },
-        { "src": "images/cases/playseated-08-41260.jpg", "label": "$41,260" },
-        { "src": "images/cases/playseated-09-53617.jpg", "label": "$53,617" },
-        { "src": "images/cases/playseated-ad-creative.jpg", "label": "Paid ad creative" }
+        {
+          "src": "images/cases/playseated-01-2819.jpg",
+          "label": "$2,819"
+        },
+        {
+          "src": "images/cases/playseated-02-4608.jpg",
+          "label": "$4,608"
+        },
+        {
+          "src": "images/cases/playseated-03-6590.jpg",
+          "label": "$6,590"
+        },
+        {
+          "src": "images/cases/playseated-04-16298.jpg",
+          "label": "$16,298"
+        },
+        {
+          "src": "images/cases/playseated-05-19217.jpg",
+          "label": "$19,217"
+        },
+        {
+          "src": "images/cases/playseated-06-22377.jpg",
+          "label": "$22,377"
+        },
+        {
+          "src": "images/cases/playseated-07-25026.jpg",
+          "label": "$25,026"
+        },
+        {
+          "src": "images/cases/playseated-08-41260.jpg",
+          "label": "$41,260"
+        },
+        {
+          "src": "images/cases/playseated-09-53617.jpg",
+          "label": "$53,617"
+        },
+        {
+          "src": "images/cases/playseated-ad-creative.jpg",
+          "label": "Paid ad creative"
+        }
       ]
     },
     {
       "slug": "the-perfect-welcome",
       "client": "The Perfect Welcome",
-      "role": "Marketing Manager (Mar 2023 – Jan 2025)",
-      "tags": ["Full-stack", "Ecommerce"],
+      "role": "Marketing Manager (Mar 2023 \u2013 Jan 2025)",
+      "tags": [
+        "Full-stack",
+        "Ecommerce"
+      ],
       "summary": "Home decor/gifting ecommerce brand, also offering real estate/mortgage services.",
       "scope": "Designed the full ecommerce website, handled product research, branding, email and social media marketing, closed deals directly, and managed the full product catalog across Living Room, Office, Outdoor, and Lighting categories.",
       "results": "Total sales of $9,981.44 over a 90-day window, up 267% versus the prior period.",
@@ -36,17 +74,32 @@
       "downloadUrl": "",
       "galleryLabel": "Catalog management & campaign assets",
       "gallery": [
-        { "src": "images/cases/perfectwelcome-banner.jpg", "label": "Campaign banner" },
-        { "src": "images/cases/perfectwelcome-review-email.jpg", "label": "Review-request email" },
-        { "src": "images/cases/perfectwelcome-catalog-1.jpg", "label": "Product catalog" },
-        { "src": "images/cases/perfectwelcome-catalog-2.jpg", "label": "Product catalog" }
+        {
+          "src": "images/cases/perfectwelcome-banner.jpg",
+          "label": "Campaign banner"
+        },
+        {
+          "src": "images/cases/perfectwelcome-review-email.jpg",
+          "label": "Review-request email"
+        },
+        {
+          "src": "images/cases/perfectwelcome-catalog-1.jpg",
+          "label": "Product catalog"
+        },
+        {
+          "src": "images/cases/perfectwelcome-catalog-2.jpg",
+          "label": "Product catalog"
+        }
       ]
     },
     {
       "slug": "crossblend",
       "client": "Crossblend",
-      "role": "Email Marketing Specialist (Feb 2021 – Aug 2022)",
-      "tags": ["Email", "Shopify"],
+      "role": "Email Marketing Specialist (Feb 2021 \u2013 Aug 2022)",
+      "tags": [
+        "Email",
+        "Shopify"
+      ],
       "summary": "Kitchen brand specializing in blenders.",
       "scope": "Designed automated email flows and a sales funnel.",
       "results": "Total sales of $6,864.99, up 417% year over year, with sessions up 191% and an 11.54% returning customer rate.",
@@ -57,24 +110,33 @@
       "slug": "kradylkroft",
       "client": "Kradyl Kroft",
       "role": "Shopify Store Management",
-      "tags": ["Shopify", "Ops"],
+      "tags": [
+        "Shopify",
+        "Ops"
+      ],
       "summary": "High-volume Shopify store with over 3,000 orders processed.",
       "scope": "Order management and day-to-day store operations across a high-order-volume Shopify store.",
       "results": "3,089 total orders processed, with a 22h 48m average fulfillment time.",
       "image": "images/cases/kradylkroft-orders.jpg",
       "downloadUrl": "",
       "gallery": [
-        { "src": "images/cases/kradylkroft-home.jpg", "label": "Store dashboard" }
+        {
+          "src": "images/cases/kradylkroft-home.jpg",
+          "label": "Store dashboard"
+        }
       ]
     },
     {
       "slug": "obazar",
       "client": "Obazar",
       "role": "Shopify Store Management",
-      "tags": ["Shopify", "SEO"],
+      "tags": [
+        "Shopify",
+        "SEO"
+      ],
       "summary": "European ecommerce store.",
       "scope": "Shopify store management and analytics tracking for a European (EUR) market storefront.",
-      "results": "Total sales of €1,158.54 over a 90-day window, from 6,594 sessions.",
+      "results": "Total sales of \u20ac1,158.54 over a 90-day window, from 6,594 sessions.",
       "image": "images/cases/obazar-analytics.jpg",
       "downloadUrl": ""
     },
@@ -82,7 +144,10 @@
       "slug": "lacasadifido",
       "client": "La Casa di Fido",
       "role": "Email Marketing Specialist",
-      "tags": ["Email", "Klaviyo"],
+      "tags": [
+        "Email",
+        "Klaviyo"
+      ],
       "summary": "Italian pet ecommerce brand.",
       "scope": "Built a three-email abandoned-cart flow in Klaviyo for this Italian pet brand.",
       "results": "44% open rate and 8% click rate on the first email in the flow, with a 4.2% placed-order rate.",
@@ -92,53 +157,75 @@
     {
       "slug": "gochipetshop",
       "client": "GochiPetShop",
-      "role": "Email Marketing Specialist (April 2023 – July 2023)",
-      "tags": ["Email", "Popup"],
+      "role": "Email Marketing Specialist (April 2023 \u2013 July 2023)",
+      "tags": [
+        "Email",
+        "Popup"
+      ],
       "summary": "Pet supplies brand.",
       "scope": "Email marketing, review-request flows, and on-site popup design for this pet supplies brand.",
-      "results": "",
+      "results": "On-site popup and review-request flow live for the full engagement window, run as part of the store's ongoing customer-acquisition and retention system.",
       "image": "images/cases/gochipetshop-popup.jpg",
       "downloadUrl": "",
       "gallery": [
-        { "src": "images/cases/gochipetshop-review-email.jpg", "label": "Review-request email" }
+        {
+          "src": "images/cases/gochipetshop-review-email.jpg",
+          "label": "Review-request email"
+        }
       ]
     },
     {
       "slug": "live2smilelife",
-      "client": "Live × Smile Life",
-      "role": "Ecommerce Marketing Specialist (Dec 2023 – Aug 2024)",
-      "tags": ["Email", "Website", "Popup"],
+      "client": "Live \u00d7 Smile Life",
+      "role": "Ecommerce Marketing Specialist (Dec 2023 \u2013 Aug 2024)",
+      "tags": [
+        "Email",
+        "Website",
+        "Popup"
+      ],
       "summary": "Travel backpacks, camping, and outdoor gear brand.",
       "scope": "Website manager for this travel and outdoor gear brand, generating consistent sales via email marketing with strong ROI, plus on-site popup design.",
-      "results": "",
+      "results": "Website and email program run for an 8-month engagement, generating consistent sales attributed directly to email \u2014 plus the on-site popup shown here.",
       "image": "images/cases/live2smilelife-popup.jpg",
       "downloadUrl": "",
       "gallery": [
-        { "src": "images/cases/live2smilelife-email.jpg", "label": "Welcome email" }
+        {
+          "src": "images/cases/live2smilelife-email.jpg",
+          "label": "Welcome email"
+        }
       ]
     },
     {
       "slug": "buyless",
       "client": "BuyLess",
       "role": "Email & Popup Design",
-      "tags": ["Email", "Popup"],
+      "tags": [
+        "Email",
+        "Popup"
+      ],
       "summary": "Home goods ecommerce brand.",
       "scope": "On-site popup design and welcome-email flow for this home goods store.",
-      "results": "",
+      "results": "Popup and welcome-email flow launched together as the first touchpoint in the store's customer-acquisition system.",
       "image": "images/cases/buyless-popup.jpg",
       "downloadUrl": "",
       "gallery": [
-        { "src": "images/cases/buyless-welcome-email.jpg", "label": "Welcome email" }
+        {
+          "src": "images/cases/buyless-welcome-email.jpg",
+          "label": "Welcome email"
+        }
       ]
     },
     {
       "slug": "tabsdeals",
       "client": "Tab's Deals",
       "role": "Popup Design",
-      "tags": ["Popup", "Home Accessories"],
+      "tags": [
+        "Popup",
+        "Home Accessories"
+      ],
       "summary": "Home accessories store.",
       "scope": "On-site email-capture popup design for this home accessories store.",
-      "results": "",
+      "results": "Popup live on-site, built to convert first-time visitors into an email list the store can market to directly.",
       "image": "images/cases/tabsdeals-popup.jpg",
       "downloadUrl": ""
     },
@@ -146,10 +233,13 @@
       "slug": "kandidklozet",
       "client": "Kandid Klozet",
       "role": "Popup Design",
-      "tags": ["Popup", "Fashion"],
+      "tags": [
+        "Popup",
+        "Fashion"
+      ],
       "summary": "Clothing store.",
       "scope": "On-site email-capture popup design for this clothing brand.",
-      "results": "",
+      "results": "Popup live on-site, designed to match the brand's visual identity while capturing first-time visitor emails.",
       "image": "images/cases/kandidklozet-popup.jpg",
       "downloadUrl": ""
     },
@@ -157,38 +247,25 @@
       "slug": "theelegantjewel",
       "client": "The Elegant Jewel",
       "role": "SEO Specialist",
-      "tags": ["SEO", "Technical"],
+      "tags": [
+        "SEO",
+        "Technical"
+      ],
       "summary": "Jewelry and watches ecommerce store.",
       "scope": "Technical SEO implementation: sitemap submission and indexing, mobile-usability validation, and structured data (schema.org) setup for search visibility.",
       "results": "Sitemap successfully indexed with 4 URLs discovered, zero crawl errors, page passing Google's Mobile-Friendly Test, and 0 errors / 0 warnings on structured data validation.",
       "image": "images/cases/elegantjewel-sitemap.jpg",
       "downloadUrl": "",
       "gallery": [
-        { "src": "images/cases/elegantjewel-mobile-test.jpg", "label": "Mobile-friendly test" },
-        { "src": "images/cases/elegantjewel-schema.jpg", "label": "Schema validation" }
+        {
+          "src": "images/cases/elegantjewel-mobile-test.jpg",
+          "label": "Mobile-friendly test"
+        },
+        {
+          "src": "images/cases/elegantjewel-schema.jpg",
+          "label": "Schema validation"
+        }
       ]
-    },
-    {
-      "slug": "poweronsales",
-      "client": "Poweronsales",
-      "role": "Project Manager (Aug 2021 – Mar 2022)",
-      "tags": ["Ops"],
-      "summary": "Real estate/property solutions company.",
-      "scope": "Built a client portal on Softr and managed data via Airtable.",
-      "results": "",
-      "image": "",
-      "downloadUrl": ""
-    },
-    {
-      "slug": "kraddle-brands",
-      "client": "Kraddle Brands",
-      "role": "Brand Manager (June 2023 – Aug 2023)",
-      "tags": ["Brand"],
-      "summary": "Health-focused superfoods, vitamins, and wellness brand.",
-      "scope": "Managed digital marketing campaigns.",
-      "results": "",
-      "image": "",
-      "downloadUrl": ""
     }
   ]
 }

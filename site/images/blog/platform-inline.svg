@@ -1,0 +1,5 @@
+<svg viewBox="0 0 1100 280" xmlns="http://www.w3.org/2000/svg">
+<rect width="1100" height="280" fill="#FAFAF9"/>
+<line x1="40" y1="220" x2="1060" y2="220" stroke="#E7E5DF" stroke-width="2"/>
+<rect x="60" y="150" width="220" height="70" rx="10" fill="#FF5A36" opacity="0.88"/><text x="170" y="245" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" font-weight="700" fill="#14171F">Content</text><rect x="310" y="130" width="220" height="90" rx="10" fill="#0F8B8D" opacity="0.88"/><text x="420" y="245" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" font-weight="700" fill="#14171F">Community</text><rect x="560" y="110" width="220" height="110" rx="10" fill="#1B3A6B" opacity="0.88"/><text x="670" y="245" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" font-weight="700" fill="#14171F">Paid Ads</text><rect x="810" y="90" width="220" height="130" rx="10" fill="#2F9E62" opacity="0.88"/><text x="920" y="245" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" font-weight="700" fill="#14171F">Analytics</text>
+</svg>

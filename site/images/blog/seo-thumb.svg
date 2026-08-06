@@ -1,0 +1,30 @@
+<svg viewBox="0 0 1200 675" xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#FF5A36"/><stop offset="100%" stop-color="#0F8B8D"/>
+  </linearGradient>
+</defs>
+<rect width="1200" height="675" fill="#FAFAF9"/>
+<g transform="translate(340,140)">
+  <rect x="0" y="0" width="520" height="340" rx="16" fill="#FFFFFF" stroke="#E7E5DF" stroke-width="2"/>
+  <rect x="0" y="0" width="520" height="46" rx="16" fill="#F4F2EC"/>
+  <circle cx="26" cy="23" r="6" fill="#FF5A36"/><circle cx="46" cy="23" r="6" fill="#F2C4B3"/><circle cx="66" cy="23" r="6" fill="#0F8B8D"/>
+  <rect x="30" y="80" width="300" height="20" rx="4" fill="#1B3A6B"/>
+  <rect x="30" y="112" width="440" height="12" rx="4" fill="#E7E5DF"/>
+  <rect x="30" y="132" width="400" height="12" rx="4" fill="#E7E5DF"/>
+  <rect x="30" y="170" width="220" height="16" rx="4" fill="#0F8B8D"/>
+  <rect x="30" y="200" width="440" height="10" rx="4" fill="#EFEDE7"/>
+  <rect x="30" y="218" width="440" height="10" rx="4" fill="#EFEDE7"/>
+  <rect x="30" y="236" width="380" height="10" rx="4" fill="#EFEDE7"/>
+</g>
+<g transform="translate(760,120)">
+  <circle cx="0" cy="0" r="70" fill="none" stroke="url(#g)" stroke-width="10"/>
+  <line x1="50" y1="50" x2="95" y2="95" stroke="url(#g)" stroke-width="12" stroke-linecap="round"/>
+  <circle cx="0" cy="0" r="70" fill="#FAFAF9" opacity="0"/>
+</g>
+<g transform="translate(700,80)" font-family="Arial,sans-serif">
+  <rect x="0" y="0" width="70" height="34" rx="17" fill="#2F9E62"/>
+  <text x="35" y="23" text-anchor="middle" font-size="15" font-weight="700" fill="#fff">#1</text>
+</g>
+<text x="600" y="600" text-anchor="middle" font-family="Arial,sans-serif" font-size="20" font-weight="700" fill="#1B3A6B" letter-spacing="1">SEO FUNDAMENTALS</text>
+</svg>
