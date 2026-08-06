@@ -1,0 +1,17 @@
+<svg width="140" height="48" viewBox="0 0 140 48" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="amGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF5A36"/>
+      <stop offset="100%" stop-color="#0F8B8D"/>
+    </linearGradient>
+  </defs>
+  <g fill="none" stroke="url(#amGrad)" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M9 34 C9 34 15 10 20 10 C25 10 31 34 31 34"/>
+    <path d="M13.5 24 C16 21.5 24 21.5 26.5 24"/>
+    <path d="M31 34 C31 28 36 28 36 22 C36 17 31 17 31 21 C31 26 40 26 40 32 C40 36 34 37 32 33" stroke-width="2.2"/>
+  </g>
+  <g fill="none" stroke="#14171F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M46 34 L46 10 L54 26 L62 10 L62 34"/>
+  </g>
+  <text x="72" y="30" font-family="'Playfair Display','Georgia',serif" font-style="italic" font-weight="600" font-size="21" fill="#14171F">Adem</text>
+</svg>

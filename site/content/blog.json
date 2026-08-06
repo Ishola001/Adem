@@ -1,0 +1,22 @@
+{
+  "posts": [
+    {
+      "slug": "email-flows-every-ecommerce-brand-needs",
+      "title": "The email flows every ecommerce brand needs",
+      "date": "2026-01-15",
+      "category": "Guide",
+      "excerpt": "Welcome, abandoned cart, post-purchase, and win-back \u2014 what each one actually does.",
+      "image": "",
+      "body": "<p>Most stores send email campaigns but skip the flows \u2014 the automated sequences that trigger based on what a customer actually does. Flows run in the background and typically outperform one-off campaigns on a per-email basis, because they arrive at the exact moment someone is ready to act.</p><h3>Welcome series</h3><p>Sent the moment someone joins your list. This is where you set expectations, introduce the brand, and often make the first offer.</p><h3>Abandoned cart</h3><p>Triggered when a shopper adds a product but leaves without buying. A short, well-timed sequence recovers a meaningful share of that lost revenue.</p><h3>Post-purchase</h3><p>Confirms the order, sets delivery expectations, and opens the door to a second purchase down the line.</p><h3>Win-back</h3><p>Re-engages customers who haven't purchased in a while, before they forget the brand entirely.</p><p>Each of these should be built once, tested, and left running \u2014 that's what separates a brand earning steady revenue from email versus one treating it as an afterthought.</p>"
+    },
+    {
+      "slug": "how-retargeting-works",
+      "title": "How retargeting works \u2014 and why it converts so well",
+      "date": "2026-01-22",
+      "category": "Guide",
+      "excerpt": "Why your warmest audience deserves its own budget, not leftover spend.",
+      "image": "",
+      "body": "<p>Retargeting shows ads to people who've already interacted with a brand \u2014 visited the site, viewed a product, or added to cart without buying. It converts at a higher rate than cold prospecting because the audience isn't being introduced to the brand for the first time \u2014 they're being reminded, at the moment they were already close to buying.</p><h3>Why it works</h3><ul><li>The audience already knows the brand \u2014 no cold introduction needed</li><li>Intent is already established \u2014 a cart visit or product view is a strong signal</li><li>Frequency builds familiarity \u2014 repeated, relevant exposure nudges hesitant buyers</li></ul><h3>Where it fits in the budget</h3><p>Retargeting should never compete with prospecting for the same budget \u2014 it's a separate, smaller pool spent on the warmest audience, and it typically returns the strongest numbers in the account.</p>"
+    }
+  ]
+}

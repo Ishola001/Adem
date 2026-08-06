@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | Adem</title>
+<meta name="description" content="Get in touch about SEO, email marketing, social media, paid ads, or Shopify management.">
+<link rel="icon" href="../images/favicon.png">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap nav">
+    <a href="index.html" class="logo"><img src="images/logo.svg" alt="Brand logo" style="height:26px;"></a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="training.html">Training</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="contact.html" class="btn btn-primary btn-sm">Book a Call</a>
+      <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <span class="eyebrow">Contact</span>
+    <h1 style="font-size:38px;">Let's work together</h1>
+    <p class="lead" style="margin-bottom:0;">Tell us about your brand and what you want to grow — We'll reply within 48 hours.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap split">
+    <form class="form-block" data-demo-form action="https://formspree.io/f/YOUR_FORM_ENDPOINT" method="POST">
+      <div class="field">
+        <label for="c-name">Name</label>
+        <input type="text" id="c-name" name="name" required>
+      </div>
+      <div class="field">
+        <label for="c-email">Email</label>
+        <input type="email" id="c-email" name="email" required>
+      </div>
+      <div class="field">
+        <label for="c-subject">Subject</label>
+        <input type="text" id="c-subject" name="subject" required>
+      </div>
+      <div class="field">
+        <label for="c-message">Message</label>
+        <textarea id="c-message" name="message" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Send Message</button>
+      <p class="form-status form-note"></p>
+    </form>
+
+    <div>
+      <h3 style="font-size:18px;">Direct contact</h3>
+      <p style="color:var(--muted); margin-bottom:10px;"><a href="mailto:adegboyemujeeb200@gmail.com" style="color:var(--coral); font-weight:600;">adegboyemujeeb200@gmail.com</a></p>
+      <p style="color:var(--muted); margin-bottom:24px;">Phone / WhatsApp: <a href="https://wa.me/2348032093068" target="_blank" rel="noopener" style="color:var(--coral); font-weight:600;">+234 803 209 3068</a></p>
+
+      <h3 style="font-size:18px;">Follow along</h3>
+      <div class="social-row" style="margin-bottom:24px;">
+        <a href="https://www.linkedin.com/in/mujeeb-adegboye" target="_blank" rel="noopener" style="font-size:14.5px;">LinkedIn</a>
+        <a href="https://www.instagram.com/adem_digitals" target="_blank" rel="noopener" style="font-size:14.5px;">Instagram</a>
+        <a href="https://www.facebook.com/profile.php?id=61578447398754" target="_blank" rel="noopener" style="font-size:14.5px;">Facebook</a>
+        <a href="https://wa.me/2348032093068" target="_blank" rel="noopener" style="font-size:14.5px;">WhatsApp</a>
+      </div>
+
+      <h3 style="font-size:18px;">Book directly</h3>
+      <p style="color:var(--muted); margin-bottom:14px;">Prefer to skip the form? Message directly on WhatsApp.</p>
+      <a href="https://wa.me/2348032093068" target="_blank" rel="noopener" class="btn btn-outline btn-sm">Chat on WhatsApp →</a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-col">
+        <h5>Site</h5>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="portfolio.html">Portfolio</a>
+      </div>
+      <div class="footer-col">
+        <h5>Services</h5>
+        <a href="services/seo.html">SEO</a>
+        <a href="services/email-marketing.html">Email Marketing</a>
+        <a href="services/paid-advertising.html">Paid Advertising</a>
+        <a href="services/shopify-ecommerce.html">Shopify Management</a>
+      </div>
+      <div class="footer-col">
+        <h5>More</h5>
+        <a href="training.html">Training</a>
+        <a href="blog.html">Blog</a>
+        <a href="guides.html">Free Guides</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <a href="mailto:adegboyemujeeb200@gmail.com">adegboyemujeeb200@gmail.com</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© <span id="year"></span> Adem. All rights reserved.</p>
+      <div class="social-row"><a href="https://www.linkedin.com/in/mujeeb-adegboye" target="_blank" rel="noopener">LinkedIn</a><a href="https://www.instagram.com/adem_digitals" target="_blank" rel="noopener">Instagram</a><a href="https://www.facebook.com/profile.php?id=61578447398754" target="_blank" rel="noopener">Facebook</a><a href="https://wa.me/2348032093068" target="_blank" rel="noopener">WhatsApp</a></div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

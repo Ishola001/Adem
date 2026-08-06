@@ -1,0 +1,61 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+# Decap CMS edits these JSON files directly. The site's JS (js/blog.js,
+# js/portfolio.js, js/guides.js) fetches them at page-load and renders
+# the cards/detail views — no rebuild step needed.
+
+collections:
+  - name: "blog"
+    label: "Blog Posts"
+    label_singular: "Blog Post"
+    file: "content/blog.json"
+    extension: "json"
+    format: "json"
+    fields:
+      - { label: "Posts", name: "posts", widget: "list", fields: [
+          { label: "Title", name: "title", widget: "string" },
+          { label: "Slug (used in the URL, no spaces)", name: "slug", widget: "string" },
+          { label: "Date", name: "date", widget: "datetime", format: "YYYY-MM-DD" },
+          { label: "Category", name: "category", widget: "string", default: "Guide" },
+          { label: "Excerpt (short summary for the card)", name: "excerpt", widget: "text" },
+          { label: "Cover Image", name: "image", widget: "image", required: false },
+          { label: "Body", name: "body", widget: "markdown" }
+        ]}
+
+  - name: "case_studies"
+    label: "Case Studies"
+    label_singular: "Case Study"
+    file: "content/case-studies.json"
+    extension: "json"
+    format: "json"
+    fields:
+      - { label: "Case Studies", name: "case_studies", widget: "list", fields: [
+          { label: "Client Name", name: "client", widget: "string" },
+          { label: "Slug (used in the URL, no spaces)", name: "slug", widget: "string" },
+          { label: "Your Role / Dates", name: "role", widget: "string" },
+          { label: "Tags", name: "tags", widget: "list" },
+          { label: "One-line Summary", name: "summary", widget: "text" },
+          { label: "Full Scope of Work", name: "scope", widget: "text" },
+          { label: "Results (real numbers if available)", name: "results", widget: "text", required: false },
+          { label: "Cover Image", name: "image", widget: "image", required: false },
+          { label: "Downloadable Case Study PDF", name: "downloadUrl", widget: "file", required: false }
+        ]}
+
+  - name: "guides"
+    label: "Free Guides"
+    label_singular: "Guide"
+    file: "content/guides.json"
+    extension: "json"
+    format: "json"
+    fields:
+      - { label: "Guides", name: "guides", widget: "list", fields: [
+          { label: "Title", name: "title", widget: "string" },
+          { label: "Slug", name: "slug", widget: "string" },
+          { label: "Description", name: "description", widget: "text" },
+          { label: "Guide PDF File", name: "fileUrl", widget: "file" }
+        ]}
