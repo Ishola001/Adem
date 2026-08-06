@@ -31,4 +31,15 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     });
   });
+
+  // Calendly popup: any element with class="calendly-trigger" opens the
+  // booking widget as an on-page overlay instead of navigating away. Uses
+  // event delegation so it also works for buttons rendered by other scripts.
+  document.addEventListener('click', function (e) {
+    var trigger = e.target.closest('.calendly-trigger');
+    if (!trigger) return;
+    if (typeof Calendly === 'undefined') return; // fall back to the normal link if the widget script hasn't loaded
+    e.preventDefault();
+    Calendly.initPopupWidget({ url: trigger.getAttribute('href') });
+  });
 });
