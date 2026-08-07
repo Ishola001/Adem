@@ -131,12 +131,7 @@ h1,h2,h3,h4{
   transition:transform .15s ease;
 }
 .nav-toggle:active{transform:scale(0.92);}
-.logo img{height:34px !important;}
-.footer-brand .logo img{height:40px !important;}
 
-@media(max-width:900px){
-  .logo img{height:38px !important;}
-}
 @media(max-width:900px){
   .nav-links{
     position:fixed; top:64px; left:0; right:0; bottom:0;
