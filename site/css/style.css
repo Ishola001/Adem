@@ -256,7 +256,7 @@ section.alt{background:var(--bg-alt);}
 .footer-col a, .footer-col li{display:block; font-size:14.5px; margin-bottom:11px; color:var(--ink);}
 .footer-col a:hover{color:var(--coral);}
 .footer-cta-col{min-width:190px;}
-.footer-cta-col .btn{width:100%; justify-content:center; margin-top:2px;}
+.footer-cta-col .btn{width:100%; justify-content:center; margin-top:2px; color:#fff;}
 .footer-bottom{
   display:flex; justify-content:space-between; align-items:center;
   border-top:1px solid var(--line); padding:22px 0 26px; flex-wrap:wrap; gap:12px;
