@@ -2,15 +2,19 @@
 document.addEventListener('DOMContentLoaded', function () {
   var toggle = document.querySelector('.nav-toggle');
   var links = document.querySelector('.nav-links');
+  var iconHamburger = '<svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M2 4.5H16M2 9H16M2 13.5H16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>';
+  var iconClose = '<svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2 2L14 14M14 2L2 14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>';
+
   if (toggle && links) {
+    toggle.innerHTML = iconHamburger;
     toggle.addEventListener('click', function () {
       links.classList.toggle('open');
-      toggle.textContent = links.classList.contains('open') ? '✕' : '☰';
+      toggle.innerHTML = links.classList.contains('open') ? iconClose : iconHamburger;
     });
     links.querySelectorAll('a').forEach(function (a) {
       a.addEventListener('click', function () {
         links.classList.remove('open');
-        toggle.textContent = '☰';
+        toggle.innerHTML = iconHamburger;
       });
     });
   }
