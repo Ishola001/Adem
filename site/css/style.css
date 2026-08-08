@@ -2,7 +2,7 @@
    Adem Digitals — Digital Marketing Manager & Ecommerce Specialist
    ================================================================= */
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Open+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Open+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap');
 
 :root{
   --bg:#FFFFFF;
@@ -63,7 +63,7 @@ h1,h2,h3,h4{
 h1 em, h2 em{font-style:normal; font-weight:700; color:var(--red);}
 
 /* Standout display font for hero headline only */
-.hero h1{font-family:'Space Grotesk',Arial,sans-serif; font-weight:600; letter-spacing:-0.02em;}
+.hero h1{font-family:'Space Grotesk',Arial,sans-serif; font-weight:700; letter-spacing:-0.02em;}
 .mono{font-family:'Poppins',Arial,sans-serif;}
 
 .wrap{max-width:var(--max); margin:0 auto; padding:0 40px;}
@@ -140,7 +140,7 @@ h1 em, h2 em{font-style:normal; font-weight:700; color:var(--red);}
 .btn:active{transform:translateY(0) scale(.97);}
 
 /* ---------- Nav ---------- */
-.site-header{position:static; z-index:50;}
+.site-header{position:sticky; top:0; z-index:50;}
 .site-header::before{
   content:"";
   position:absolute; inset:0; z-index:-1;
