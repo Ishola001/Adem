@@ -19,9 +19,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  // Simple client-side confirmation for forms not yet wired to a backend.
-  // Replace the <form action="..."> with your Formspree/Zapier endpoint,
-  // then this just becomes a normal submit (remove the preventDefault block below).
+  // Demo-form fallback notice (real Formspree endpoints just submit normally)
   document.querySelectorAll('form[data-demo-form]').forEach(function (form) {
     form.addEventListener('submit', function (e) {
       var action = form.getAttribute('action') || '';
@@ -30,20 +28,104 @@ document.addEventListener('DOMContentLoaded', function () {
         var note = form.querySelector('.form-status');
         if (note) {
           note.textContent = 'This form isn\'t connected to an endpoint yet — see the setup note in the README.';
-          note.style.color = '#FF5A36';
+          note.style.color = '#C0392B';
         }
       }
     });
   });
 
-  // Calendly popup: any element with class="calendly-trigger" opens the
-  // booking widget as an on-page overlay instead of navigating away. Uses
-  // event delegation so it also works for buttons rendered by other scripts.
+  // Calendly popup
   document.addEventListener('click', function (e) {
     var trigger = e.target.closest('.calendly-trigger');
     if (!trigger) return;
-    if (typeof Calendly === 'undefined') return; // fall back to the normal link if the widget script hasn't loaded
+    if (typeof Calendly === 'undefined') return;
     e.preventDefault();
     Calendly.initPopupWidget({ url: trigger.getAttribute('href') });
+  });
+
+  // ---------- Reveal on scroll ----------
+  var revealEls = document.querySelectorAll('[data-reveal], [data-reveal-stagger]');
+  if (revealEls.length && 'IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in-view');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+    revealEls.forEach(function (el) { io.observe(el); });
+  } else {
+    revealEls.forEach(function (el) { el.classList.add('in-view'); });
+  }
+
+  // ---------- Animated proof counters ----------
+  var counters = document.querySelectorAll('.hero-proof .num[data-count]');
+  if (counters.length && 'IntersectionObserver' in window) {
+    var counted = false;
+    var cio = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting && !counted) {
+          counted = true;
+          counters.forEach(animateCount);
+          cio.disconnect();
+        }
+      });
+    }, { threshold: 0.5 });
+    counters.forEach(function (el) { cio.observe(el.closest('.hero-proof')); });
+  }
+  function animateCount(el) {
+    var target = el.getAttribute('data-count');
+    var suffix = el.getAttribute('data-suffix') || '';
+    var numeric = parseInt(target, 10);
+    if (isNaN(numeric)) { el.textContent = target; return; }
+    var start = 0;
+    var duration = 1100;
+    var startTime = null;
+    function step(ts) {
+      if (!startTime) startTime = ts;
+      var progress = Math.min((ts - startTime) / duration, 1);
+      var eased = 1 - Math.pow(1 - progress, 3);
+      el.textContent = Math.round(eased * numeric) + suffix;
+      if (progress < 1) requestAnimationFrame(step);
+      else el.textContent = numeric + suffix;
+    }
+    requestAnimationFrame(step);
+  }
+
+  // ---------- Hero media rotator ----------
+  var slides = document.querySelectorAll('.hero-slide');
+  var dots = document.querySelectorAll('.hero-dots span');
+  var badge = document.querySelector('.hero-badge');
+  if (slides.length > 1) {
+    var current = 0;
+    setInterval(function () {
+      slides[current].classList.remove('active');
+      dots[current] && dots[current].classList.remove('active');
+      current = (current + 1) % slides.length;
+      slides[current].classList.add('active');
+      dots[current] && dots[current].classList.add('active');
+      if (badge) {
+        var num = slides[current].getAttribute('data-num');
+        var label = slides[current].getAttribute('data-label');
+        badge.style.opacity = 0;
+        setTimeout(function () {
+          badge.querySelector('.hero-badge-num').textContent = num;
+          badge.querySelector('.hero-badge-label').textContent = label;
+          badge.style.opacity = 1;
+        }, 260);
+      }
+    }, 3800);
+  }
+
+  // ---------- FAQ plus/minus icon swap on native <details> ----------
+  document.querySelectorAll('.faq-item').forEach(function (item) {
+    var summary = item.querySelector('summary');
+    if (summary && !summary.querySelector('.faq-plus')) {
+      var span = document.createElement('span');
+      span.className = 'faq-plus';
+      span.textContent = '+';
+      summary.appendChild(span);
+    }
   });
 });

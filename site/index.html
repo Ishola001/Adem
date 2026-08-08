@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Adem | Digital Marketing Manager & Ecommerce Specialist</title>
+<title>Adem Digitals | Digital Marketing Manager & Ecommerce Specialist</title>
 <meta name="description" content="Digital Marketing Manager & Ecommerce Specialist helping brands grow through SEO, email marketing, paid ads, and Shopify strategy.">
 <link rel="icon" href="images/favicon.png">
 <link rel="stylesheet" href="css/style.css">
@@ -13,7 +13,7 @@
 
 <header class="site-header">
   <div class="wrap nav">
-    <a href="index.html" class="logo"><img src="images/logo.svg" alt="Brand logo" style="height:36px;"></a>
+    <a href="index.html" class="logo"><img src="images/logo.svg" alt="Adem Digitals logo"></a>
     <nav class="nav-links">
       <a href="index.html" class="active">Home</a>
       <a href="about.html">About</a>
@@ -33,8 +33,8 @@
 
 <section class="hero">
   <div class="wrap hero-grid">
-    <div class="hero-copy">
-      <span class="eyebrow">Digital Marketing Manager & Ecommerce Specialist</span>
+    <div class="hero-copy" data-reveal>
+      <span class="eyebrow"><span class="eyebrow-full">Digital Marketing Manager & Ecommerce Specialist</span><span class="eyebrow-short">Digital Marketing Manager</span></span>
       <h1>Marketing that reads like <em>evidence</em>, not a pitch deck.</h1>
       <p class="lead">We help ecommerce and DTC brands grow through SEO, email marketing, paid ads, and hands-on Shopify management — the same playbook we run for real ecommerce brands every day.</p>
       <div class="hero-actions">
@@ -42,120 +42,128 @@
         <a href="portfolio.html" class="btn btn-outline">View Our Work</a>
       </div>
       <div class="hero-proof">
-        <div class="proof-item"><span class="num">30+</span><span class="label">Brands managed</span></div>
-        <div class="proof-item"><span class="num">5</span><span class="label">Core service lines</span></div>
-        <div class="proof-item"><span class="num">2020</span><span class="label">Active since</span></div>
+        <div class="proof-item"><span class="num" data-count="30" data-suffix="+">0</span><span class="label">Brands managed</span></div>
+        <div class="proof-item"><span class="num" data-count="5">0</span><span class="label">Core service lines</span></div>
+        <div class="proof-item"><span class="num" data-count="2020">0</span><span class="label">Active since</span></div>
       </div>
     </div>
-    <div class="hero-media">
+    <div class="hero-media" data-reveal>
       <div class="hero-photo-frame">
-        <img src="images/hero/playseated-sales-proof.jpg" alt="PlaySeated Shopify analytics dashboard showing $53,617 in net sales">
+        <div class="hero-dots">
+          <span class="active"></span><span></span><span></span><span></span>
+        </div>
+        <div class="hero-slide active" data-num="$53,617" data-label="PlaySeated — net sales tracked on Shopify, trailing 12 months">
+          <img src="images/hero/playseated-sales-proof.jpg" alt="PlaySeated Shopify analytics dashboard showing $53,617 in net sales">
+        </div>
+        <div class="hero-slide" data-num="$9,981" data-label="The Perfect Welcome — total sales, 90-day window">
+          <img src="images/cases/perfectwelcome-analytics.jpg" alt="The Perfect Welcome Shopify analytics dashboard">
+        </div>
+        <div class="hero-slide" data-num="$6,865" data-label="Crossblend — total sales, up 417% year over year">
+          <img src="images/cases/crossblend-analytics.jpg" alt="Crossblend Shopify analytics dashboard">
+        </div>
+        <div class="hero-slide" data-num="3,089" data-label="Kradyl Kroft — total orders processed">
+          <img src="images/cases/kradylkroft-orders.jpg" alt="Kradyl Kroft Shopify orders dashboard">
+        </div>
       </div>
       <div class="hero-badge">
-        <span class="hero-badge-num">$53k+</span>
-        <span class="hero-badge-label">Net sales tracked on one client's Shopify dashboard</span>
+        <span class="hero-badge-num">$53,617</span>
+        <span class="hero-badge-label">PlaySeated — net sales tracked on Shopify, trailing 12 months</span>
       </div>
     </div>
   </div>
 </section>
 
 <div class="wrap">
-  <div class="trust-row">
+  <div class="trust-row" data-reveal>
     <span class="trust-label">Trusted by</span>
-    <div class="logos">
-      <span>PlaySeated</span>
-      <span>Crossblend</span>
-      <span>The Perfect Welcome</span>
-      <span>GlamBox Jewel</span>
-      <span>Live2smilelive</span>
+    <div class="marquee">
+      <div class="marquee-track">
+        <span>PlaySeated</span><span>Crossblend</span><span>The Perfect Welcome</span><span>GlamBox Jewel</span><span>Live2smilelive</span><span>Kradyl Kroft</span><span>GochiPetShop</span>
+        <span>PlaySeated</span><span>Crossblend</span><span>The Perfect Welcome</span><span>GlamBox Jewel</span><span>Live2smilelive</span><span>Kradyl Kroft</span><span>GochiPetShop</span>
+      </div>
     </div>
   </div>
 </div>
 
-<section>
+<section class="alt">
+  <div class="section-glow glow-red"></div>
   <div class="wrap">
-    <div class="section-head">
+    <div class="section-head" data-reveal>
       <span class="eyebrow">What We do</span>
       <h2>Five services, each run as its own discipline</h2>
       <p>No bundled "full-service" vagueness — pick what your brand needs, or combine them.</p>
     </div>
-    <div class="card-grid">
-      <div class="ticket">
-        <div class="icon mono">SE</div>
-        <h3>SEO</h3>
+    <div class="card-grid" data-reveal-stagger>
+      <div class="ticket service-ticket">
+        <div class="service-head"><div class="icon mono">SE</div><h3>SEO</h3></div>
         <p>On-page, technical, and content SEO built to move ecommerce product and collection pages up the rankings.</p>
-        <a href="services/seo.html" class="link">Learn more →</a>
+        <a href="services/seo.html" class="btn-learn">Learn more <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
       </div>
-      <div class="ticket">
-        <div class="icon mono">EM</div>
-        <h3>Email Marketing</h3>
+      <div class="ticket service-ticket">
+        <div class="service-head"><div class="icon mono">EM</div><h3>Email Marketing</h3></div>
         <p>Klaviyo flows and campaigns that turn one-time buyers into repeat customers.</p>
-        <a href="services/email-marketing.html" class="link">Learn more →</a>
+        <a href="services/email-marketing.html" class="btn-learn">Learn more <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
       </div>
-      <div class="ticket">
-        <div class="icon mono">SM</div>
-        <h3>Social Media Management</h3>
+      <div class="ticket service-ticket">
+        <div class="service-head"><div class="icon mono">SM</div><h3>Social Media Management</h3></div>
         <p>Content systems and posting cadence that build an audience, not just a feed.</p>
-        <a href="services/social-media.html" class="link">Learn more →</a>
+        <a href="services/social-media.html" class="btn-learn">Learn more <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
       </div>
-      <div class="ticket">
-        <div class="icon mono">PA</div>
-        <h3>Paid Advertising</h3>
+      <div class="ticket service-ticket">
+        <div class="service-head"><div class="icon mono">PA</div><h3>Paid Advertising</h3></div>
         <p>Meta and Google Ads campaigns built around real unit economics, not just impressions.</p>
-        <a href="services/paid-advertising.html" class="link">Learn more →</a>
+        <a href="services/paid-advertising.html" class="btn-learn">Learn more <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
       </div>
-      <div class="ticket">
-        <div class="icon mono">SH</div>
-        <h3>Shopify / Ecommerce Management</h3>
+      <div class="ticket service-ticket">
+        <div class="service-head"><div class="icon mono">SH</div><h3>Shopify / Ecommerce Management</h3></div>
         <p>Full store management — product, merchandising, and day-to-day operations.</p>
-        <a href="services/shopify-ecommerce.html" class="link">Learn more →</a>
+        <a href="services/shopify-ecommerce.html" class="btn-learn">Learn more <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
       </div>
-      <div class="ticket">
-        <div class="icon mono">TR</div>
-        <h3>Training</h3>
+      <div class="ticket service-ticket">
+        <div class="service-head"><div class="icon mono">TR</div><h3>Training</h3></div>
         <p>Hands-on digital marketing and social media training for people starting out.</p>
-        <a href="training.html" class="link">Learn more →</a>
+        <a href="training.html" class="btn-learn">Learn more <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
       </div>
     </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-head" data-reveal>
+      <span class="eyebrow">Case files</span>
+      <h2>Real brands, real work — not templates</h2>
+      <p>Eight engagements, eight different problems solved. Every case study below has the real scope, and a downloadable file walking through how it was actually run.</p>
+    </div>
+    <div class="card-grid" id="home-case-grid" data-reveal-stagger></div>
+    <p style="text-align:center; margin-top:28px;"><a href="portfolio.html" class="btn btn-outline">View all case studies →</a></p>
   </div>
 </section>
 
 <section class="alt">
   <div class="wrap">
-    <div class="section-head" style="margin-bottom:32px;">
-      <span class="eyebrow">Case files</span>
-      <h2>Real brands, real work — not templates</h2>
-      <p>Eight engagements, eight different problems solved. Every case study below has the real scope, and a downloadable file walking through how it was actually run.</p>
-    </div>
-    <div class="card-grid" id="home-case-grid"></div>
-    <p style="text-align:center; margin-top:28px;"><a href="portfolio.html" class="btn btn-outline">View all case studies →</a></p>
-  </div>
-</section>
-
-<section>
-  <div class="wrap">
-    <div class="section-head">
+    <div class="section-head" data-reveal>
       <span class="eyebrow">Process</span>
       <h2>How an engagement actually runs</h2>
       <p>The same sequence, whatever the service — evidence before action, tracked results after.</p>
     </div>
-    <div class="process">
-      <div class="process-row"><div class="process-num">01</div><div class="process-body"><h4>Audit</h4><p>A real look at what's working, what isn't, and why — before anything changes.</p></div></div>
-      <div class="process-row"><div class="process-num">02</div><div class="process-body"><h4>Strategy</h4><p>A plan built around your actual numbers, not a generic playbook.</p></div></div>
-      <div class="process-row"><div class="process-num">03</div><div class="process-body"><h4>Execution</h4><p>Flows, campaigns, and pages built and shipped on a set cadence.</p></div></div>
-      <div class="process-row"><div class="process-num">04</div><div class="process-body"><h4>Reporting</h4><p>Monthly review of what moved and what to adjust next.</p></div></div>
+    <div class="process" data-reveal-stagger>
+      <div class="process-row"><div class="process-num">01</div><div class="process-body"><h4>Audit</h4><p>A real look at what's working, what isn't, and why.</p></div></div>
+      <div class="process-row"><div class="process-num">02</div><div class="process-body"><h4>Strategy</h4><p>A plan built around your actual numbers.</p></div></div>
+      <div class="process-row"><div class="process-num">03</div><div class="process-body"><h4>Execution</h4><p>Flows, campaigns, and pages shipped on cadence.</p></div></div>
+      <div class="process-row"><div class="process-num">04</div><div class="process-body"><h4>Reporting</h4><p>Monthly review of what moved and what's next.</p></div></div>
       <div class="process-row"><div class="process-num">05</div><div class="process-body"><h4>Scale</h4><p>Double down on what's working, cut what isn't.</p></div></div>
     </div>
   </div>
 </section>
 
-<section class="alt">
+<section>
   <div class="wrap">
-    <div class="section-head">
+    <div class="section-head" data-reveal>
       <span class="eyebrow">Who this is for</span>
       <h2>Built for ecommerce and DTC brands</h2>
     </div>
-    <div class="card-grid">
+    <div class="card-grid" data-reveal-stagger>
       <div class="ticket card-top-accent">
         <h3>Growing stores</h3>
         <p>Past the early stage, ready to systemize marketing instead of running it ad hoc.</p>
@@ -172,62 +180,65 @@
   </div>
 </section>
 
-<section>
+<section class="alt">
+  <div class="section-glow glow-forest"></div>
   <div class="wrap">
-    <div class="section-head">
+    <div class="section-head" data-reveal>
       <span class="eyebrow">Free resources</span>
       <h2>Guides you can use right now</h2>
       <p>Download and read at your own pace.</p>
     </div>
-    <div class="card-grid" id="home-guide-grid"></div>
+    <div class="card-grid" id="home-guide-grid" data-reveal-stagger></div>
     <p style="text-align:center; margin-top:20px;"><a href="guides.html" class="btn btn-outline btn-sm">See all free guides →</a></p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-head" data-reveal>
+      <span class="eyebrow">What clients say</span>
+      <h2>Testimonials</h2>
+    </div>
+    <div class="testi-wrap" data-reveal>
+      <div class="testi-track" id="testi-track">
+        <div class="quote-card">
+          <span class="quote-mark">"</span>
+          <p>Before Adem, our Shopify store was basically invisible. He built the store from scratch, ran our marketing from the ground up and within a few months we were finally showing up for searches that actually mattered. $53k in sales followed.</p>
+          <div class="quote-person"><div class="quote-avatar">IS</div><div><div class="quote-name">Ivor Subotic</div><div class="quote-role">PlaySeated CEO</div></div></div>
+        </div>
+        <div class="quote-card">
+          <span class="quote-mark">"</span>
+          <p>What stood out was how hands-on he was. This wasn't a monthly report with vague recommendations — he was in the Shopify backend, in Klaviyo, actually building things and testing them.</p>
+          <div class="quote-person"><div class="quote-avatar">Y</div><div><div class="quote-name">Yelitza</div><div class="quote-role">Glambox CEO</div></div></div>
+        </div>
+        <div class="quote-card">
+          <span class="quote-mark">"</span>
+          <p>Our abandoned cart flow alone paid for months of his work. He set it up, tested different messaging, and just left it running.</p>
+          <div class="quote-person"><div class="quote-avatar">KK</div><div><div class="quote-name">Kradyl Kroft</div><div class="quote-role">CEO</div></div></div>
+        </div>
+        <div class="quote-card">
+          <span class="quote-mark">"</span>
+          <p>Communication was never an issue — he was responsive, explained things in plain language instead of jargon, and never made me feel behind on the technical side.</p>
+          <div class="quote-person"><div class="quote-avatar">D</div><div><div class="quote-name">Dianna</div><div class="quote-role">The Perfect Welcome CEO</div></div></div>
+        </div>
+        <div class="quote-card">
+          <span class="quote-mark">"</span>
+          <p>The email marketing system he built runs quietly in the background and consistently pulls in revenue we'd otherwise have left on the table.</p>
+          <div class="quote-person"><div class="quote-avatar">L2</div><div><div class="quote-name">Live2Smile Life</div><div class="quote-role">CEO</div></div></div>
+        </div>
+        <div class="quote-card">
+          <span class="quote-mark">"</span>
+          <p>He treated our store like it was his own business, not just another client account. That mindset shift is rare and it showed in the results.</p>
+          <div class="quote-person"><div class="quote-avatar">G</div><div><div class="quote-name">GochiPetShop</div><div class="quote-role">CEO</div></div></div>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
 <section class="alt">
   <div class="wrap">
-    <div class="section-head">
-      <span class="eyebrow">What clients say</span>
-      <h2>Testimonials</h2>
-    </div>
-    <div class="card-grid">
-      <div class="quote-card">
-        <span class="quote-mark">"</span>
-        <p>Before Adem, our Shopify store was basically invisible. He built the store from scratch, ran our marketing from the ground up and within a few months we were finally showing up for searches that actually mattered. $53k in sales followed.</p>
-        <div class="quote-person"><div class="quote-avatar">IS</div><div><div class="quote-name">Ivor Subotic</div><div class="quote-role">PlaySeated CEO</div></div></div>
-      </div>
-      <div class="quote-card">
-        <span class="quote-mark">"</span>
-        <p>What stood out was how hands-on he was. This wasn't a monthly report with vague recommendations — he was in the Shopify backend, in Klaviyo, actually building things and testing them.</p>
-        <div class="quote-person"><div class="quote-avatar">Y</div><div><div class="quote-name">Yelitza</div><div class="quote-role">Glambox CEO</div></div></div>
-      </div>
-      <div class="quote-card">
-        <span class="quote-mark">"</span>
-        <p>Our abandoned cart flow alone paid for months of his work. He set it up, tested different messaging, and just left it running. That kind of set-it-right-once approach is exactly what we needed.</p>
-        <div class="quote-person"><div class="quote-avatar">KK</div><div><div class="quote-name">Kradyl Kroft</div><div class="quote-role">CEO</div></div></div>
-      </div>
-      <div class="quote-card">
-        <span class="quote-mark">"</span>
-        <p>Communication was never an issue — he was responsive, explained things in plain language instead of jargon, and never made me feel behind for not knowing the technical side.</p>
-        <div class="quote-person"><div class="quote-avatar">D</div><div><div class="quote-name">Dianna</div><div class="quote-role">The Perfect Welcome CEO</div></div></div>
-      </div>
-      <div class="quote-card">
-        <span class="quote-mark">"</span>
-        <p>The email marketing system he built runs quietly in the background and consistently pulls in revenue we'd otherwise have left on the table. I didn't fully appreciate how much money was slipping through the cracks until he fixed it.</p>
-        <div class="quote-person"><div class="quote-avatar">L2</div><div><div class="quote-name">Live2Smile Life</div><div class="quote-role">CEO</div></div></div>
-      </div>
-      <div class="quote-card">
-        <span class="quote-mark">"</span>
-        <p>He treated our store like it was his own business, not just another client account. That mindset shift is rare and it showed in the results.</p>
-        <div class="quote-person"><div class="quote-avatar">G</div><div><div class="quote-name">GochiPetShop</div><div class="quote-role">CEO</div></div></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section>
-  <div class="wrap">
-    <div class="section-head">
+    <div class="section-head" data-reveal>
       <span class="eyebrow">FAQ</span>
       <h2>Common questions</h2>
     </div>
@@ -248,13 +259,29 @@
         <summary>Is training offered alongside client work?</summary>
         <p>Yes — see the Training page for the current curriculum and how to apply.</p>
       </details>
+      <details class="faq-item">
+        <summary>Do you work with brands outside Nigeria?</summary>
+        <p>Yes — engagements run fully remote, and current clients span the US, Europe, and beyond.</p>
+      </details>
+      <details class="faq-item">
+        <summary>What platforms do you work on?</summary>
+        <p>Shopify is the core focus for store management; email runs on Klaviyo, and ads run on Meta and Google.</p>
+      </details>
+      <details class="faq-item">
+        <summary>How is pricing structured?</summary>
+        <p>Each service is scoped individually after an audit call, based on the size of the store and the work involved — not a flat rate card.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Do you sign contracts or work month-to-month?</summary>
+        <p>Both are available. Most engagements start month-to-month and move to a longer retainer once the systems are proven.</p>
+      </details>
     </div>
   </div>
 </section>
 
 <section class="alt">
   <div class="wrap">
-    <div class="cta-band">
+    <div class="cta-band" data-reveal>
       <h2>Ready to grow your brand?</h2>
       <p>Let's talk about what's holding your store back — and what to fix first.</p>
       <div class="hero-actions" style="justify-content:center;">
@@ -269,11 +296,11 @@
   <div class="wrap">
     <div class="footer-main">
       <div class="footer-brand">
-        <a href="index.html" class="logo"><img src="images/logo.svg" alt="Adem — Digital Marketing Manager & Ecommerce Specialist" style="height:30px;"></a>
+        <a href="index.html" class="logo"><img src="images/logo.svg" alt="Adem Digitals — Digital Marketing Manager & Ecommerce Specialist"></a>
         <p class="footer-tagline">Digital Marketing Manager & Ecommerce Specialist.<br>SEO, email flows, paid ads, and Shopify systems built for measurable growth.</p>
         <div class="footer-contact">
           <a href="mailto:adegboyemujeeb200@gmail.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v16H4z"/><path d="m4 6 8 7 8-7"/></svg>adegboyemujeeb200@gmail.com</a>
-          <a href="https://wa.me/2348032093068" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>+234 803 209 3068 (call or WhatsApp)</a>
+          <a href="https://wa.me/2348032093068" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>+234 803 209 3068 (WhatsApp)</a>
         </div>
       </div>
       <div class="footer-links">
@@ -300,14 +327,14 @@
           <a href="contact.html">Contact</a>
         </div>
         <div class="footer-col footer-cta-col">
-          <h5>Let's Work together</h5>
+          <h5>Let's Work Together</h5>
           <p style="font-size:13.5px; color:var(--muted); margin:0 0 14px; line-height:1.6;">Have a brand that needs marketing that actually performs?</p>
           <a href="https://calendly.com/adem_digitals/marketing-strategy-call-with-adem" target="_blank" rel="noopener" class="btn btn-primary btn-sm calendly-trigger">Book a Call</a>
         </div>
       </div>
     </div>
     <div class="footer-bottom">
-      <p>© <span id="year"></span> Adem. All rights reserved.</p>
+      <p>© <span id="year"></span> Adem Digitals. All rights reserved.</p>
       <div class="social-row">
         <a href="https://www.linkedin.com/in/mujeeb-adegboye" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.6 0 4.27 2.37 4.27 5.46zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56z"/></svg></a>
         <a href="https://www.instagram.com/adem_digitals" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1"/></svg></a>
@@ -349,6 +376,11 @@
     }).join('');
   }).catch(function(e){ console.error('Could not load guides preview:', e); });
 </script>
+<script>
+  // Duplicate testimonial track for a seamless infinite slide
+  var track = document.getElementById('testi-track');
+  if (track) { track.innerHTML += track.innerHTML; }
+</script>
 <script src="js/download-gate.js"></script>
 
 <div class="dg-overlay" id="download-gate-modal">
@@ -373,6 +405,7 @@
   </div>
 </div>
 
+<a href="https://wa.me/2348032093068" target="_blank" rel="noopener" class="whatsapp-float" aria-label="Chat on WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.77.46 3.45 1.34 4.95L2 22l5.29-1.39a9.9 9.9 0 0 0 4.75 1.21h.01c5.46 0 9.9-4.45 9.9-9.91C21.96 6.45 17.5 2 12.04 2zm5.8 14.03c-.24.68-1.4 1.3-1.93 1.35-.5.05-1.02.24-3.4-.71-2.87-1.14-4.72-4.05-4.87-4.24-.14-.19-1.17-1.55-1.17-2.97 0-1.41.74-2.1 1-2.39.26-.28.57-.35.76-.35.19 0 .38 0 .55.01.18.01.42-.07.65.5.24.58.81 2 .88 2.15.07.14.12.31.02.5-.1.19-.15.31-.29.48-.15.17-.31.38-.44.51-.15.14-.3.3-.13.6.17.28.76 1.25 1.63 2.03 1.12 1 2.06 1.31 2.35 1.46.29.14.46.12.63-.07.17-.19.72-.84.91-1.13.19-.29.38-.24.63-.14.26.1 1.65.78 1.93.92.29.14.48.21.55.33.07.12.07.68-.17 1.36z"/></svg></a>
 <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
 </body>
 </html>

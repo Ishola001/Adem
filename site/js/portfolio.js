@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', function () {
       var items = data.case_studies || [];
 
       if (gridEl) {
+        gridEl.setAttribute('data-reveal-stagger', '');
         gridEl.innerHTML = items.map(function (c) {
           var tags = (c.tags || []).map(function (t) { return '<span class="tag">' + escapeHtml(t) + '</span>'; }).join('');
           return '<a href="#' + escapeHtml(c.slug) + '" class="ticket" style="text-decoration:none;">' +
@@ -18,6 +19,17 @@ document.addEventListener('DOMContentLoaded', function () {
             '<p>' + escapeHtml(c.summary || '') + '</p>' +
             '<span class="link">Read case file →</span></a>';
         }).join('');
+        // re-trigger reveal observer for dynamically injected content
+        if ('IntersectionObserver' in window) {
+          var io2 = new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) {
+              if (entry.isIntersecting) { entry.target.classList.add('in-view'); io2.unobserve(entry.target); }
+            });
+          }, { threshold: 0.1 });
+          io2.observe(gridEl);
+        } else {
+          gridEl.classList.add('in-view');
+        }
       }
 
       if (detailsEl) {
@@ -58,7 +70,7 @@ function galleryStrip(c) {
       '</div>';
   }).join('');
   return '<div style="margin-top:22px;">' +
-    (c.galleryLabel ? '<p class="mono" style="font-size:12px; color:var(--coral); text-transform:uppercase; letter-spacing:.04em; margin-bottom:10px;">' + escapeHtml(c.galleryLabel) + '</p>' : '') +
+    (c.galleryLabel ? '<p class="mono" style="font-size:12px; color:var(--red); text-transform:uppercase; letter-spacing:.04em; margin-bottom:10px;">' + escapeHtml(c.galleryLabel) + '</p>' : '') +
     '<div style="display:flex; gap:14px; overflow-x:auto; padding-bottom:6px;">' + imgs + '</div></div>';
 }
 
