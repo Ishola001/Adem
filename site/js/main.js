@@ -5,19 +5,42 @@ document.addEventListener('DOMContentLoaded', function () {
   var iconHamburger = '<svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M2 4.5H16M2 9H16M2 13.5H16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>';
   var iconClose = '<svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2 2L14 14M14 2L2 14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>';
 
+  var header = document.querySelector('.site-header');
+  var savedScrollY = 0;
+
+  function openMenu() {
+    savedScrollY = window.scrollY || window.pageYOffset || 0;
+    links.classList.add('open');
+    if (header) header.classList.add('nav-fixed');
+    toggle.innerHTML = iconClose;
+    document.body.style.position = 'fixed';
+    document.body.style.top = '-' + savedScrollY + 'px';
+    document.body.style.width = '100%';
+  }
+
+  function closeMenu() {
+    links.classList.remove('open');
+    if (header) header.classList.remove('nav-fixed');
+    toggle.innerHTML = iconHamburger;
+    document.body.style.position = '';
+    document.body.style.top = '';
+    document.body.style.width = '';
+    window.scrollTo(0, savedScrollY);
+  }
+
   if (toggle && links) {
     toggle.innerHTML = iconHamburger;
     toggle.addEventListener('click', function () {
-      links.classList.toggle('open');
       var isOpen = links.classList.contains('open');
-      toggle.innerHTML = isOpen ? iconClose : iconHamburger;
-      document.body.style.overflow = isOpen ? 'hidden' : '';
+      if (isOpen) {
+        closeMenu();
+      } else {
+        openMenu();
+      }
     });
     links.querySelectorAll('a').forEach(function (a) {
       a.addEventListener('click', function () {
-        links.classList.remove('open');
-        toggle.innerHTML = iconHamburger;
-        document.body.style.overflow = '';
+        if (links.classList.contains('open')) closeMenu();
       });
     });
   }
