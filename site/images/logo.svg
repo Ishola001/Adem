@@ -1,14 +1,14 @@
 <svg width="150" height="40" viewBox="0 0 150 40" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <linearGradient id="markGradWide" x1="4" y1="30" x2="34" y2="8" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#FF5A36"/>
-      <stop offset="100%" stop-color="#0F8B8D"/>
+      <stop offset="0%" stop-color="#BD5A2C"/>
+      <stop offset="100%" stop-color="#20493C"/>
     </linearGradient>
   </defs>
 
   <!-- icon frame -->
   <rect x="0" y="0" width="40" height="40" rx="11" fill="#FFFFFF"/>
-  <rect x="0.75" y="0.75" width="38.5" height="38.5" rx="10.25" fill="none" stroke="#E7E5DF" stroke-width="1.5"/>
+  <rect x="0.75" y="0.75" width="38.5" height="38.5" rx="10.25" fill="none" stroke="#DCE3D8" stroke-width="1.5"/>
 
   <!-- growth arrow -->
   <g fill="none" stroke="url(#markGradWide)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
@@ -20,8 +20,8 @@
   </g>
 
   <!-- A&M monogram nested in the frame -->
-  <text x="20" y="34" text-anchor="middle" font-family="'Inter','Helvetica Neue',Arial,sans-serif" font-weight="600" font-size="7" letter-spacing="1" fill="#14171F">A&amp;M</text>
+  <text x="20" y="34" text-anchor="middle" font-family="'Inter','Helvetica Neue',Arial,sans-serif" font-weight="600" font-size="7" letter-spacing="1" fill="#182420">A&amp;M</text>
 
   <!-- wordmark -->
-  <text x="50" y="26" font-family="'Playfair Display','Georgia',serif" font-style="italic" font-weight="600" font-size="20" fill="#14171F">Adem</text>
+  <text x="50" y="26" font-family="'Poppins','Helvetica Neue',Arial,sans-serif" font-weight="600" font-size="20" fill="#182420">Adem</text>
 </svg>
