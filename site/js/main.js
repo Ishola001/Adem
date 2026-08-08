@@ -9,12 +9,15 @@ document.addEventListener('DOMContentLoaded', function () {
     toggle.innerHTML = iconHamburger;
     toggle.addEventListener('click', function () {
       links.classList.toggle('open');
-      toggle.innerHTML = links.classList.contains('open') ? iconClose : iconHamburger;
+      var isOpen = links.classList.contains('open');
+      toggle.innerHTML = isOpen ? iconClose : iconHamburger;
+      document.body.style.overflow = isOpen ? 'hidden' : '';
     });
     links.querySelectorAll('a').forEach(function (a) {
       a.addEventListener('click', function () {
         links.classList.remove('open');
         toggle.innerHTML = iconHamburger;
+        document.body.style.overflow = '';
       });
     });
   }
