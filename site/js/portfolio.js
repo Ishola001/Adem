@@ -75,8 +75,7 @@ function galleryStrip(c) {
 }
 
 function caseBody(c, downloadBtn) {
-  return '<span class="result-pill">◆ Case file</span>' +
-    '<h2 style="font-size:26px;">' + escapeHtml(c.client) + '</h2>' +
+  return '<h2 style="font-size:26px;">' + escapeHtml(c.client) + '</h2>' +
     '<p style="color:var(--muted);"><strong style="color:var(--ink);">Role:</strong> ' + escapeHtml(c.role || '') + '</p>' +
     '<p style="color:var(--muted);"><strong style="color:var(--ink);">Scope:</strong> ' + escapeHtml(c.scope || '') + '</p>' +
     (c.results ? '<p style="color:var(--muted);"><strong style="color:var(--ink);">Results:</strong> ' + escapeHtml(c.results) + '</p>' : '') +
