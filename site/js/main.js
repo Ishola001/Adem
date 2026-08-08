@@ -118,6 +118,35 @@ document.addEventListener('DOMContentLoaded', function () {
     }, 3800);
   }
 
+  // ---------- Testimonials: click-and-drag swipe (mouse + touch) ----------
+  document.querySelectorAll('.testi-track').forEach(function (track) {
+    var isDown = false, startX, scrollLeft, moved;
+    track.addEventListener('mousedown', function (e) {
+      isDown = true; moved = false;
+      track.classList.add('dragging');
+      startX = e.pageX - track.offsetLeft;
+      scrollLeft = track.scrollLeft;
+    });
+    ['mouseleave', 'mouseup'].forEach(function (evt) {
+      track.addEventListener(evt, function () {
+        isDown = false;
+        track.classList.remove('dragging');
+      });
+    });
+    track.addEventListener('mousemove', function (e) {
+      if (!isDown) return;
+      e.preventDefault();
+      var x = e.pageX - track.offsetLeft;
+      var walk = x - startX;
+      if (Math.abs(walk) > 5) moved = true;
+      track.scrollLeft = scrollLeft - walk;
+    });
+    // Prevent accidental link/card click right after a drag
+    track.addEventListener('click', function (e) {
+      if (moved) { e.preventDefault(); e.stopPropagation(); }
+    }, true);
+  });
+
   // ---------- FAQ plus/minus icon swap on native <details> ----------
   document.querySelectorAll('.faq-item').forEach(function (item) {
     var summary = item.querySelector('summary');
